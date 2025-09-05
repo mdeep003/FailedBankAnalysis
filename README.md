@@ -77,6 +77,10 @@ ___
   Track regional exposure and acquirer activity as **M&A opportunities** during crises.
 
 ___
+🔗 **Interactive Visuals**  
+Static screenshots are shown below, but you can explore the full interactive Plotly charts in the notebook here:  
+👉 [View on nbviewer](https://nbviewer.org/github/mdeep003/FailedBankAnalysis/blob/main/failed_banks_analysis.ipynb)
+___
 
 ## Interactive Streamlit App
 
