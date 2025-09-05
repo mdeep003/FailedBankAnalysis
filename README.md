@@ -78,6 +78,46 @@ ___
 
 ___
 
+## Interactive Streamlit App
+
+This project includes a fully interactive **Streamlit web application** (`app.py`) that provides an enhanced user experience for exploring the failed bank data.
+
+### Features
+- **Interactive filtering** focused by year range and state selection
+- **Real-time metrics** displaying total failures, peak year, and top state
+- **Dynamic visualizations** including:
+  - Failures per year (interactive bar chart)
+  - Geographic hotspots (choropleth map of US states)
+  - Consolidation analysis (treemap of acquiring institutions)
+  - HHI trends over time (market concentration analysis)
+- **Data upload capability** to analyze custom CSV files
+- **Automatic data cleaning** for various CSV formats
+
+### Running the App
+```bash
+# Install Streamlit (if not already installed)
+pip install streamlit
+
+# Run the interactive app
+streamlit run app.py
+```
+
+The app will launch in your browser at `http://localhost:8501` (or the next available port).
+
+### Technical Details
+- **Data Processing**: Automatic column cleaning and date parsing
+- **Visualization**: Built with Plotly for interactive charts
+- **Performance**: Cached data loading for fast filtering
+- **Responsive Design**: Wide layout useful for data exploration
+
+This interactive version complements the static analysis in the Jupyter notebook, providing a more accessible way for stakeholders to explore the data and generate insights on-demand.
+
+___
+**Interactive Visuals**  
+Static screenshots are shown below, but you can explore the full interactive Plotly charts in the notebook here:  
+[View on nbviewer](https://nbviewer.org/github/mdeep003/FailedBankAnalysis/blob/main/failed_banks_analysis.ipynb)
+___
+
 ## How to Run
 ```bash
 # Clone repo
@@ -89,14 +129,3 @@ make setup
 
 # Launch notebook
 make nb
-
-
-
-
-
-
-
-
-
-
-
